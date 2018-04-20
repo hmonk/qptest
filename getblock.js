@@ -1,7 +1,6 @@
-var from = 1;
-var to = 100;
+function getblock(from, to){
   for (i=from; i<=to; i++){
-    var block = eth.getblock(i);
+    var block = eth.getBlock(i);
     with (block){
       var time = DATE(timestamp);
       console.log(number,
@@ -14,3 +13,5 @@ var to = 100;
     }
 
   }
+}
+getblock(1,10);
