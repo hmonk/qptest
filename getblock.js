@@ -1,4 +1,5 @@
-function getblock(from, to){
+var from = 1;
+var to = 100;
   for (i=from; i<=to; i++){
     var block = eth.getblock(i);
     with (block){
@@ -13,5 +14,3 @@ function getblock(from, to){
     }
 
   }
-}
-getblock(1,10);
