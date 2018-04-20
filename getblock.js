@@ -9,8 +9,9 @@ function getblock(from, to){
                   gasLimit,
                   gasUsed,
                   time);
-      
+
     }
 
   }
 }
+getblock(1,10)
