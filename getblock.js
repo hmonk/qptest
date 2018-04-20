@@ -2,7 +2,8 @@ function getblock(from, to){
   for (i=from; i<=to; i++){
     var block = eth.getBlock(i);
     with (block){
-      var time = DATE(timestamp);
+      var t = new Date(timestamp);
+      var time = t.format("hh:mm:ss")
       console.log(number,
                   miner,
                   size,
