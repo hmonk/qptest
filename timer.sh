@@ -4,7 +4,7 @@ set -e
 
 mkdir -p ~/qptest/timer
 
-filename=$(date +Y%m%d_%H)
+filename=$(date +%Y%m%d_%H)
 
 
 for ((num=1; num<=24; num++)){
