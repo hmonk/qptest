@@ -3,7 +3,10 @@ function getblock(from, to){
     var block = eth.getBlock(i);
     with (block){
       var t = new Date(timestamp);
-      var time = t.getHours()+":"+t.getMinutes()+":"+t.getSeconds()
+      var hour = t.getHours();
+      var min = "0" + t.getMinutes();
+      var sec = "0" + t.getSeconds();
+      var time = hour + ':' + min.substr(-2) + ':' + sec.substr(-2);
       console.log(number,
                   miner,
                   size,
