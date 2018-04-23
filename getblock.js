@@ -2,7 +2,7 @@ function getblock(from, to){
   for (i=from; i<=to; i++){
     var block = eth.getBlock(i);
     with (block){
-      var t = new Date(timestamp);
+      var t = new Date(timestamp*1000);
       var hour = t.getHours();
       var min = "0" + t.getMinutes();
       var sec = "0" + t.getSeconds();
