@@ -22,7 +22,7 @@
 		//mseconds = "0" + date.getMilliseconds();
 
 
-    console.log(eth.sendTransaction({from:sender, to:receiver, value:amt, nounce:200000+num}), hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2));
+    console.log(eth.sendTransaction({from:sender, to:receiver, value:amt, nonce:200000+num}), hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2));
 
 
 		/*console.log("{");
