@@ -9,7 +9,7 @@
 	var seconds;
 
 ///////////////
-  var num = 20000;
+  var num = 10000;
 ///////////////
 
 	personal.unlockAccount(sender, "san123",300);
