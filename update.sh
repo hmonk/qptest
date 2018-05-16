@@ -6,4 +6,4 @@ cd ~/qptest
 git pull
 cd -
 
-cp ~/qptest/shart.sh ~/
+cp ~/qptest/geth/shart.sh ~/
